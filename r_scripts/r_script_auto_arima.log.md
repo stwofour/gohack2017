@@ -70,8 +70,15 @@
 
 ```
 > acf(rides.xts.train.diff1, lag.max=20, na.action = na.omit)
+```
+![ACF on Diff](https://www.github.com/stwofour/gohack2017/public/ACF+on+Diff.png)
+
+
+```
 > pacf(rides.xts.train.diff1, lag.max=20, na.action = na.omit)
 ```
+![PACF on Diff](https://www.github.com/stwofour/gohack2017/public/Partial+ACF+on+Diff.png)
+
 
 ```
 > rides.auto.arima.train.model1
@@ -111,6 +118,11 @@ ma1 -0.836966116 -0.81057718
 
 ```
 > acf(rides.auto.arima.train.model1.forecasts$residuals, lag.max=20)
+```
+![ACF on Forecast Residuals](https://www.github.com/stwofour/gohack2017/public/ACF+on+Forecast+Residuals.png)
+
+
+```
 > Box.test(rides.auto.arima.train.model1.forecasts$residuals, lag=20, type="Ljung-Box")
 
 	Box-Ljung test
@@ -119,16 +131,24 @@ data:  rides.auto.arima.train.model1.forecasts$residuals
 X-squared = 255.33, df = 20, p-value < 2.2e-16
 
 > plotForecastErrors(rides.auto.arima.train.model1.forecasts$residuals)
+```
+![ForecastErrors](https://www.github.com/stwofour/gohack2017/public/Histogram+of+Forecast+Errors.png)
+
+
+```
 > mean(rides.auto.arima.train.model1.forecasts$residuals)
 [1] 1.982045e-05
 ```
 
 ```
 > rides.xts.rest = rides.xts["2017-01-01/"]
-> rides.xts.rest[1,]
-           [,1]
-2017-01-01    6
-> rides.xts.rest[2,]
+> rides.xts.rest[1:6,] # Actual Data
                     [,1]
+2017-01-01 00:00:00    6
 2017-01-01 00:10:00    6
+2017-01-01 00:20:00    6
+2017-01-01 00:30:00    5
+2017-01-01 00:40:00    3
+2017-01-01 00:50:00    5
+
 ```

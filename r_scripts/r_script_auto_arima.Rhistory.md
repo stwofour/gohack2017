@@ -73,6 +73,5 @@ mean(rides.auto.arima.train.model1.forecasts$residuals)
 ```
 # what's the generated/real value?
 rides.xts.rest = rides.xts["2017-01-01/"]
-rides.xts.rest[1,]
-rides.xts.rest[2,]
+rides.xts.rest[1:6,]
 ```
