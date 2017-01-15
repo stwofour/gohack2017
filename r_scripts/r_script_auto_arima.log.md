@@ -71,13 +71,13 @@
 ```
 > acf(rides.xts.train.diff1, lag.max=20, na.action = na.omit)
 ```
-![ACF on Diff](https://www.github.com/stwofour/gohack2017/public/ACF+on+Diff.png)
+![ACF on Diff](https://www.dropbox.com/sh/kwe2dusjwbh1zow/AADDN8tGTFMiO7jflzlX5O7ea?dl=0&preview=ACF+on+Diff.png)
 
 
 ```
 > pacf(rides.xts.train.diff1, lag.max=20, na.action = na.omit)
 ```
-![PACF on Diff](https://www.github.com/stwofour/gohack2017/public/Partial+ACF+on+Diff.png)
+![PACF on Diff](https://www.dropbox.com/sh/kwe2dusjwbh1zow/AADDN8tGTFMiO7jflzlX5O7ea?dl=0&preview=Partial+ACF+on+Diff.png)
 
 
 ```
@@ -119,7 +119,7 @@ ma1 -0.836966116 -0.81057718
 ```
 > acf(rides.auto.arima.train.model1.forecasts$residuals, lag.max=20)
 ```
-![ACF on Forecast Residuals](https://www.github.com/stwofour/gohack2017/public/ACF+on+Forecast+Residuals.png)
+![ACF on Forecast Residuals](https://www.dropbox.com/sh/kwe2dusjwbh1zow/AADDN8tGTFMiO7jflzlX5O7ea?dl=0&preview=ACF+on+Forecast+Residuals.png)
 
 
 ```
@@ -132,7 +132,7 @@ X-squared = 255.33, df = 20, p-value < 2.2e-16
 
 > plotForecastErrors(rides.auto.arima.train.model1.forecasts$residuals)
 ```
-![ForecastErrors](https://www.github.com/stwofour/gohack2017/public/Histogram+of+Forecast+Errors.png)
+![ForecastErrors](https://www.dropbox.com/sh/kwe2dusjwbh1zow/AADDN8tGTFMiO7jflzlX5O7ea?dl=0&preview=Histogram+of+Forecast+Errors.png)
 
 
 ```

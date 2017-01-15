@@ -139,7 +139,7 @@ a model with 2015 & 2016 data. Then, I tried to predict number of expected reque
 Jan 1, 2017 00:00, 6 (generated), 4.68 (predicted by ARIMA model)
 Jan 1, 2017 00:10, 6 (generated), 4.67 (predicted by ARIMA model)
 
-You can examine r_scripts/Rhistory file (which has just commands) and [r_scripts/log.md](https://github.com/stwofour/gohack2017/r_scripts/r_script_auto_arima.log.md) file (which shows results as well)
+You can examine [r_scripts/Rhistory](https://github.com/stwofour/gohack2017/blob/master/r_scripts/r_script_auto_arima.Rhistory) file (which has just commands) and [r_scripts/log.md](https://github.com/stwofour/gohack2017/blob/master/r_scripts/r_script_auto_arima.log.md) file (which shows results as well)
 
 I did many iterations to get to the stage described in R scripts.
 
